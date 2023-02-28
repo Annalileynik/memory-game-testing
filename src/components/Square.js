@@ -11,6 +11,7 @@ const styleSquare = {
     fontWeight:'1000',
     cursor:'pointer'
 }
+
 const Square = (props) => {
     console.log(props)
     return (
