@@ -31,14 +31,12 @@ const [history, setHistory]=useState([])
         }
         setBoard(newBoard)
     }
-
 useEffect(()=> {emojiBoard()},[])
     const openCard = (id,img) => {
     const newBoard = board.map(el=>
    el.id===id ? {...el, isOpen:true}:el)
         setBoard(newBoard)
         setHistory([...history, img])
-
     }
 
     const checkMove = () => {
